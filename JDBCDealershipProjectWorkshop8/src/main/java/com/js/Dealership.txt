@@ -1,0 +1,13 @@
+ Vehicle truck1 = new Vehicle("Ford", "F-150", "Black", "Truck", 2019, 25000, 50500,012976);
+ Vehicle car1 = new Vehicle("Honda", "Civic", "Red", "Car", 2018, 35000, 25000, 129586);
+ Vehicle car2 = new Vehicle("Toyota", "Camry", "White", "Car", 2020, 15000, 37000,097244);
+ Vehicle car3 = new Vehicle("Chevy", "Corvette", "Blue", "Car", 1019, 1000, 76000, 564356);
+ Vehicle car4 =new Vehicle( "Chevrolet", "Camaro","Red" , "Car", 2021, 35000, 30000,234567 );
+ Vehicle car5 =new Vehicle( "Toyota", "Corolla", "Silver", "car",2018 , 20000,25000, 667934 );
+ Vehicle car6 =new Vehicle( "Jeep", "Grand Cherokee", "White", "SUV",2017, 30000,75000,876456 );
+ Vehicle car7 =new Vehicle( "Nissan", "Frontier", "Gray", "Truck", 2009, 28000,500, 544546 );
+ Vehicle car8 =new Vehicle( "Honda", "Civic", "Black", "Car", 2023, 15000, 88000, 563345);
+ Vehicle car9 =new Vehicle( "Dodge", "Charger", "Green", "Car", 2022, 8000, 100000, 543566);
+ Vehicle car10 =new Vehicle( "Ford", "Mustang", "Yellow", "Car", 2020, 25000,50000, 765534);
+ Vehicle car11 =new Vehicle( "GMC", "Sierra 1500", "Blue", "Truck", 2016, 40000,40000, 586907 );
+ Vehicle car12 =new Vehicle( "Chevrolet", "Tahoe", "Black", "SUV", 2012, 35000, 22000, 008667);
