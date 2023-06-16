@@ -3,13 +3,26 @@ package com.js;
 import java.util.ArrayList;
 
 class Dealership {
+    private final int id;
     private String name;
     private String address;
     private String phone;
     private ArrayList<Vehicle> inventory;
-    private DealershipFileManager dealershipFileManager;
-    private int id;
 
+
+
+    public Dealership(int id,
+                      String name,
+                      String address,
+                      String phone)
+                      {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
+        this.inventory = new ArrayList<>();
+
+    }
 
     public String getName() {
         return name;

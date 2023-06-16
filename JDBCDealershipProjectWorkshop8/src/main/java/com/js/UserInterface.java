@@ -13,7 +13,7 @@ public class UserInterface {
 
     private void init(){
         // Load dealership and inventory from a file
-        this.dealership = dealershipFileManager.getDealership();
+//        this.dealership = dealershipFileManager.getDealership();
     }
 
     public void display(){

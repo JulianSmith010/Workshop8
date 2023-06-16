@@ -1,6 +1,7 @@
 package com.js;
 
 class Vehicle {
+    private int id;
     private String make;
     private String model;
     private String color;
@@ -8,7 +9,7 @@ class Vehicle {
     private int year;
     private int mileage;
     private double price;
-    private int id;
+
 
     public Vehicle(String make, String model, String color, String type, int year, int mileage, double price, int id) {
         this.make = make;

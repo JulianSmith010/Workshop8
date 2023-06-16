@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
     public class DealershipFileManager {
 
         String dealershipFileLocation = "./src/main/java/com/js/dealership.txt";
-        public Dealership getDealership(){
+        public void getDealership(){
 
             try {
                 FileInputStream dealershipFile = new FileInputStream(dealershipFileLocation);
@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 
                 String firstLine_dealershipData = scanner.nextLine();
                 String[] dealershipDataArr = firstLine_dealershipData.split(Pattern.quote("|"));
-                Dealership initialDealership = new Dealership();
+//                Dealership initialDealership = new Dealership();
 
                 String vehicleData;
                 while(scanner.hasNextLine()){
@@ -31,17 +31,18 @@ import java.util.regex.Pattern;
                             vehicleDataArr[1],
                             vehicleDataArr[2],
                             vehicleDataArr[3],
-                            Integer.parseInt(vehicleDataArr[4]);
-                            Integer.parseInt(vehicleDataArr[5]);
-                            Double.parseDouble(vehicleDataArr[6]);
-                            Integer.parseInt(vehicleDataArr[7]);
+                            Integer.parseInt(vehicleDataArr[4]),
+                            Integer.parseInt(vehicleDataArr[5]),
+                            Double.parseDouble(vehicleDataArr[6]),
+                            Integer.parseInt(vehicleDataArr[7])
+                            );
 
 
-                    initialDealership.addVehicle(currentVehicle);
+//                    initialDealership.addVehicle(currentVehicle);
                 }
 
                 scanner.close();
-                return initialDealership;
+//                return initialDealership;
 
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
