@@ -81,8 +81,31 @@ public class DealershipDataManager {
                 Connection connection = this.basicDataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(query);
 
-                ){
-            PreparedStatement.setString(1, "%" + nameToSearchBy +)
+                ) {
+            PreparedStatement.setString(1, "%" + nameToSearchBy + "%");
+
+            try (
+                    ResultSet resultSet = preparedStatement.executeQuery();
+            ) {
+                while (resultSet.next()) {
+                    int id = resultSet.getInt("id");
+                    String name = resultSet.getString("name");
+                    String address = resultSet.getString("address");
+                    String phone = resultSet.getString("phone");
+
+                    Dealership dealership = new Dealership(id, name, address, phone);
+
+                    dealershipsFound.add(dealership);
+                }
+            }
+        }   catch (SQLException e){
+            e.printStackTrace();
+
+        }
+            return dealershipsFound;
+        }
+
+        
     }
 }
 
